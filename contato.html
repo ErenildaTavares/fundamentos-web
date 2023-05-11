@@ -25,15 +25,19 @@
       <div>
         <form>
           <label for="nome">Nome:</label> <br />
-          <input type="text" id="nome" />
-          <br />
+          <input type="text" nome="nome" onkeyup="validaNome()" id="nome" placeholder="Insira seu nome"/>
+          <div id="txtNome"></div>
+          
           <label for="email">E-mail:</label> <br />
-          <input type="email" id="email" />
-          <br />
+          <input type="email" id="email" onkeyup="validaEmail()" />
+          <div id="txtEmail"></div>
+
           <label for="assunto">Assunto:</label> <br />
-          <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-          <br />
-          <button>Enviar</button>
+          <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+          <div id="txtAssunto"></div>
+
+          <button onclick="enviar()"> Enviar</button>
+
         </form>
       </div>
 
@@ -53,7 +57,7 @@
       style="border: 0"
       allowfullscreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
+      referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id = 'mapa'
     ></iframe>
       </div>
 
@@ -74,6 +78,10 @@
       </div>
       <p class="center">Todos os direitos reservados: Erenilda Tavares &copy;</p>
     </footer>
+  
+    <script src="./assets/script/script.js">
+
+    </script>
 
   </body>
 </html>
