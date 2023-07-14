@@ -20,21 +20,21 @@
   
 }
 
-/* #menu li{
+ #menu li{
   display:inline;
   padding: 15px;
 }
 
 #menu li a {
   text-decoration: none;
-  color:#F97B22;
+  color:#181818;
   font-size: 20px ;
 }
 
 #menu li a:hover{
-  color: #9CA777;
+  color: #842df5;
 
-} */
+} 
 
 .p-30{
   padding: 30px;
@@ -121,3 +121,30 @@
   color: orangered;
   text-align: center;
 }
+
+/* Estilos para o carrossel */
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-content {
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+.carousel-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+}
+
+/* Animação do carrossel */
+/* @keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+} */
