@@ -31,10 +31,10 @@
   font-size: 20px ;
 }
 
-#menu li a:hover{
+/* #menu li a:hover{
   color: #842df5;
 
-} 
+}  */
 
 .p-30{
   padding: 30px;
@@ -111,9 +111,10 @@
 .corfundo{
   background-color: #FEE8B0;
   border-radius: 15px;
-  width: 200vh;
-  height: 200vh;
+  width: 190vh;
+  height: 100vh;
 margin-left: 20px;
+padding: 10px;
 
 
 }
@@ -153,4 +154,71 @@ margin-left: 20px;
   0% { transform: translateX(0%); }
   100% { transform: translateX(-100%); }
 } 
+
+/* CSS Personalizado home */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.corfundo {
+  background-color: #f9f4ec;
+  padding: 20px;
+  text-align: center;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff9e45;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu li a:hover {
+  background-color: #f2894b;
+}
+
+.center {
+  text-align: center;
+  color: #ff6b00;
+  margin-top: 30px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carousel-item {
+  margin-right: 20px;
+}
+
+.carousel-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+p.center {
+  text-align: center;
+  margin-top: 30px;
+  color: #ff9e45;
+  font-size: 14px;
+}
 
