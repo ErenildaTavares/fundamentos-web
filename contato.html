@@ -30,7 +30,7 @@
     <div class="container mb-50">
 
       <div>
-        <form>
+        <form id="contatoForm">
           <label for="nome">Nome:</label> <br />
           <input type="text" nome="nome" onkeyup="validaNome()" id="nome" placeholder="Insira seu nome"/>
           <div id="txtNome"></div>
@@ -43,7 +43,8 @@
           <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
           <div id="txtAssunto"></div>
 
-          <button onclick="enviar()"> Enviar</button>
+          
+          <input type="button" value="Enviar" onclick="enviar()">
 
         </form>
       </div>
@@ -88,17 +89,11 @@
         <!-- Adicione mais itens de carrossel aqui se necessário -->
         </div>
         </div>
-
-        
       </div>
-      
-      <p class="center">Todos os direitos reservados: Erenilda Tavares &copy;</p>
     </footer>
-  
     <script src="./assets/script/script.js">
-
     </script>
-
+<p class="center">Todos os direitos reservados: Erenilda Tavares &copy;</p>
   </body>
 </html> 
 

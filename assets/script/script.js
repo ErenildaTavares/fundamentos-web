@@ -5,9 +5,15 @@ function validaNome(){
 
 }*/
 
-let nome = document.getElementById("nome")
-let email = document.querySelector("#email")
-let assunto = document.querySelector("#assunto")
+// let nome = document.getElementById("nome")
+// let email = document.querySelector("#email")
+// let assunto = document.querySelector("#assunto")
+document.getElementById('contatoForm').addEventListener('submit', function () {
+    var nome = this.querySelector('input[name=nome]'), nome = nome.value;
+    var email = this.querySelector('input[name=email]'), email = email.value;
+    var assunto= 'Olá destinatário, \nMeu nome é '+ nome +' e meu email é '+ email;
+    this.querySelector('input[name=assunto]').setAttribute('value', assunto);
+});
 let nomeOk = false
 let emailOk = false
 let assuntoOk = false
@@ -15,7 +21,7 @@ let mapa = document.querySelector("#mapa")
 
 nome.style.width = "100%"
 email.style.width = '100%'
-
+ 
 function validaNome(){
     let txtNome = document.querySelector("#txtNome")
     if(nome.value.length <2){
@@ -55,13 +61,22 @@ function validaAssunto(){
     }
 }
 
+let url = "mailto:ctterenildatavares@gmail.com" +
+"?subject=" + encodeURIComponent("Contato pelo formulário") +
+"&body=" + encodeURIComponent("Nome: " + nome.value + "\nE-mail: " + email.value + "\nMensagem: " + assunto.value);
+    
+
 function enviar(){
     if(nomeOk == true && emailOk && assuntoOk == true){
-        alert('Formulário enviado com sucesso!')
+        alert('Clique em "Ok" para prosseguir com o envio do email!')
+        // Redirecione o usuário para o cliente de e-mail padrão com a URL de envio do e-mail
+window.location.href = url;
     }else{
         alert('Preencha p formulário corretamente antes de enviar!')
     }
+     console.log(assunto.value)
 }
+
 
 function mapaZoom(){
 mapa.style.width = "800px"
