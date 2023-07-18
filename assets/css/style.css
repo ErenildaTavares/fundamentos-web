@@ -109,12 +109,13 @@
   border-radius: 5px;
 }
 .corfundo{
-  background-color: #FEE8B0;
+  background-color: #f1f1f1;
   border-radius: 15px;
-  width: 190vh;
-  height: 100vh;
+  max-width: 95%;
+  max-height: 150%;
 margin-left: 20px;
 padding: 10px;
+
 
 
 }
@@ -128,7 +129,7 @@ padding: 10px;
 }
 
 /* Estilos para o carrossel */
-.carousel-container {
+/* .carousel-container {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
@@ -146,7 +147,7 @@ padding: 10px;
 
 .carousel-item img {
   max-width: 35%;
-}
+} */
 
 
 
@@ -162,11 +163,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.corfundo {
+/* .corfundo {
   background-color: #f9f4ec;
   padding: 20px;
   text-align: center;
-}
+} */
 
 #menu {
   list-style-type: none;
@@ -199,7 +200,7 @@ body {
   margin-top: 30px;
 }
 
-.carousel-container {
+/* .carousel-container {
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -213,7 +214,7 @@ body {
   width: 300px;
   height: auto;
   border-radius: 8px;
-}
+} */
 
 p.center {
   text-align: center;
@@ -222,3 +223,10 @@ p.center {
   font-size: 14px;
 }
 
+.styleText{
+  width: 100vh;
+  height: 100vh;
+  align-items: end !important;
+  justify-content: end;
+  text-align: end;
+}
