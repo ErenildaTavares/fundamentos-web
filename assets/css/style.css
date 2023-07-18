@@ -4,31 +4,27 @@
   color: rgb(70, 69, 69);
 }
 
-.justify{
+.justify {
   text-align: justify;
   color: #46573d;
-  
 }
 
 .container {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  align-items: center; 
-}
-.img{
-  
+  align-items: center;
 }
 
- #menu li{
-  display:inline;
+#menu li {
+  display: inline;
   padding: 15px;
 }
 
 #menu li a {
   text-decoration: none;
-  color:#181818;
-  font-size: 20px ;
+  color: #181818;
+  font-size: 20px;
 }
 
 /* #menu li a:hover{
@@ -36,25 +32,24 @@
 
 }  */
 
-.p-30{
+.p-30 {
   padding: 30px;
 }
 
-.br-50{
+.br-50 {
   border-radius: 50%;
 }
-.wh-400{
+.wh-400 {
   width: 400px;
   height: 400px;
 }
 
-.tm-social{
+.tm-social {
   width: 50px;
   height: 50px;
-  
 }
 
-.mb-50{
+.mb-50 {
   margin-bottom: 50px;
 }
 
@@ -63,6 +58,29 @@
 .ml-50 {
   margin-left: 50px;
 }
+.containerSobre {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-containerSobre {
+  flex: 0 0 auto;
+}
+
+.text-containerSobre {
+  flex: 1;
+}
+
+.profile-image {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.justify {
+  text-align: justify;
+}
+
 
 .card {
   position: relative;
@@ -108,22 +126,19 @@
   text-decoration: none;
   border-radius: 5px;
 }
-.corfundo{
+.corfundo {
   background-color: #f1f1f1;
   border-radius: 15px;
   max-width: 95%;
   max-height: 150%;
-margin-left: 20px;
-padding: 10px;
-
-
-
+  margin-left: 20px;
+  padding: 10px;
 }
-  .corFundoHTML{
-    background-color:orangered;
-    border-radius: 50px;
-  }
-.textPerfil{
+.corFundoHTML {
+  background-color: orangered;
+  border-radius: 50px;
+}
+.textPerfil {
   color: orangered;
   text-align: center;
 }
@@ -149,12 +164,14 @@ padding: 10px;
   max-width: 35%;
 } */
 
-
-
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
-} 
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /* CSS Personalizado home */
 body {
@@ -223,10 +240,43 @@ p.center {
   font-size: 14px;
 }
 
-.styleText{
+.styleText {
   width: 100vh;
   height: 100vh;
   align-items: end !important;
   justify-content: end;
   text-align: end;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-title {
+  margin-top: 10px;
+}
+
+.card-description {
+  margin-top: 10px;
+}
+
+.card-link {
+  display: block;
+  margin-top: 10px;
 }
