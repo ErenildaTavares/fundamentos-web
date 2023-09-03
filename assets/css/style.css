@@ -27,11 +27,6 @@
   font-size: 20px;
 }
 
-/* #menu li a:hover{
-  color: #842df5;
-
-}  */
-
 .p-30 {
   padding: 30px;
 }
@@ -80,7 +75,6 @@
 .justify {
   text-align: justify;
 }
-
 
 .card {
   position: relative;
